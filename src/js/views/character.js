@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useContext } from "react";
+import { Context } from "../../store/appContext";
 import { Link } from "react-router-dom"
 
 const Character = (props) => {
 
+    const { store, actions } = useContext(Context);
     
     return (
         <div className="row">
