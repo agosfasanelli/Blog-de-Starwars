@@ -15,7 +15,7 @@ export const Planets = props => {
     .then((response) => {
     console.log(response.ok); // will be true if the response is successfull
     console.log(response.status); // the status code = 200 or code = 400 etc.
-    return response.json();
+  
         })
 
     .then((response) => {
