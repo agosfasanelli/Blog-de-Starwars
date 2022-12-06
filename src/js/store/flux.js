@@ -13,20 +13,20 @@ const getState = ({ getStore, getActions, setStore }) => {
 					initial: "white"
 				}
 			],
-			favourite:[]
+			favorite:[]
 		},
 		actions: {
 			
 			addFavourite:(name) =>{
 				const store = getStore()
-				setStore({favourites:[...store.favourites,name]})
+				setStore({favorite:[...store.favorite,name]})
 				
 			},
 
 			deleteFavourite: (index) =>{   
 				const store = getStore()
-				const nuevaLista = store.favourites.filter((item,i) => i != index)
-				setStore({favourites:nuevaLista})
+				const nuevaLista = store.favorite.filter((item,i) => i != index)
+				setStore({favorite:nuevaLista})
 				
 				                  
 			},

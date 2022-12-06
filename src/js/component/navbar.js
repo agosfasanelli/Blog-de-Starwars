@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Dropdown from "./dropdown";
 
 export const Navbar = () => {
 	return (
@@ -13,10 +14,12 @@ export const Navbar = () => {
 						alt="MDN"/>
 					</span>
 				</Link>
-				<div className="boton ml-auto">
-					<Link to="/demo">
-						<button className="btn btn-warning m-3">Favoritos</button>
-					</Link>
+				<div className="ml-auto">
+					<div class="dropdown">
+						
+						<Dropdown/>
+					</div>
+					
 				</div>
 			</nav>
 		</div>	
