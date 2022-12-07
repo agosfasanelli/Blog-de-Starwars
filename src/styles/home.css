@@ -25,3 +25,73 @@
     height: 50;
     width: auto;
  }
+
+
+
+ /* The heart of the matter */
+.testimonial-group > .row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.testimonial-group > .row > .col-6  {
+  display: inline-block;
+}
+
+/* Decorations */
+.col-6 { 
+  color: #fff; 
+  font-size: 48px; 
+  padding-bottom: 20px; 
+  padding-top: 18px;
+  margin-right: 4px;
+  margin-left: 4px
+}
+
+/*.planets {
+  box-shadow: 0px 0px 40px #ffffff;
+}*/
+
+
+startdiv{
+ 
+  justify-content: flex-start;
+  
+}
+
+.cursorpointer{
+
+  cursor: pointer;
+  
+}
+
+
+
+.divoverflow{
+  width: 1200px;
+  height: 600px;
+  overflow-x: scroll;
+  display:inline-flex;
+  
+}
+
+.marginclasstopbottom{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.marginrightleft{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.cardbody{
+  height: 200px;
+}
+
+.textcolor{
+color:white
+}
+
+.card-img-top{
+  height: 50;
+  width: auto;
+}

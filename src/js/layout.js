@@ -10,6 +10,7 @@ import injectContext from "./store/appContext";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import InfoCharacters from "./views/infoCharacter";
+import { Planets } from "./views/planets";
 
 //create your first component
 const Layout = () => {
@@ -28,6 +29,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/info/:uid" >
 							<InfoCharacters />
+						</Route>
+						<Route exact path="/planets/:uid">
+							<Planets />
 						</Route>
 						<Route exact path="/demo">
 							<Demo />
