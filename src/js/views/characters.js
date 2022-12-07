@@ -24,6 +24,7 @@ const Characters = () => {
                         listOfCharacters.map((character,index) => {
                             return <div className="col-6 col-md-3" key={index}>
                                         <Character 
+                                            character={character}
                                             name={character.name}
                                             uid={character.uid}
                                             image= {`https://starwars-visualguide.com/assets/img/characters/${character.uid}.jpg`}

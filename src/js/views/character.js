@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Context } from "../../store/appContext";
+import { Context } from "../store/appContext";
 import { Link } from "react-router-dom"
 
 const Character = (props) => {
@@ -22,7 +22,7 @@ const Character = (props) => {
                             className="btn btn-warning">
                             Go!
                         </Link>
-                        <button type="button" className="btn btn-outline-warning" onClick={}>corazon</button>
+                        <button type="button" className="btn btn-outline-warning" onClick={() => actions.selectFavs(props.character)}>corazon</button>
                     </div>
             </div>
         </div>
