@@ -19,10 +19,10 @@ const Character = (props) => {
                         </p>
                         <Link 
                             to={`/info/${props.uid}`} 
-                            className="btn btn-warning">
-                            Go!
+                            className="btn btn-warning float-start">
+                            Learn More!
                         </Link>
-                        <button type="button" className="btn btn-outline-warning" onClick={() => actions.selectFavs(props.character)}>corazon</button>
+                        <button type="button" className="btn btn-outline-warning float-end" onClick={() => actions.selectFavs(props.character)}><i class="far fa-heart"></i></button>
                     </div>
             </div>
         </div>
