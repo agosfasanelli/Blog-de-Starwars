@@ -73,7 +73,7 @@ startdiv{
 
 .divoverflow{
   width: 1300px;
-  height: 645px;
+  height: 680px;
   overflow-x: scroll;
   display:inline-flex;
   
@@ -84,8 +84,8 @@ startdiv{
   margin-bottom: 25px;
 }
 .marginrightleft{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .cardbody{
   height: 200px;
