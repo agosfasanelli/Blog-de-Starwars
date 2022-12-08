@@ -33,7 +33,7 @@ export const Planets = props => {
         <div className="container">
             <div className="row pb-3 border-bottom border-warning border-2">
                 <div className="col-md-5">
-                        <img src={`https://starwars-visualguide.com/assets/img/planets/${params.uid}.jpg`} width="500px" className=""/>
+                        <img src={`https://starwars-visualguide.com/assets/img/planets/${params.uid}.jpg`} width="500px" className="rounded-start"/>
                 </div>
                 <div className="col-md-7">
                         <h2 className="d-flex justify-content-center textcolor">{planetDetail.name}</h2>
