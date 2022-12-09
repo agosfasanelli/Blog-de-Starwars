@@ -22,7 +22,7 @@ const Character = (props) => {
                             className="btn btn-warning float-start">
                             Learn More!
                         </Link>
-                        <button type="button" className="btn btn-outline-warning float-end" onClick={() => actions.selectFavs(props.character)}><i class="far fa-heart"></i></button>
+                        <button type="button" className="btn btn-outline-warning float-end" onClick={() => actions.addFavourite(props.name)}><i class="far fa-heart"></i></button>
                     </div>
             </div>
         </div>

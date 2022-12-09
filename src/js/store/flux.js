@@ -4,16 +4,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			favorite: []
 		},
 		actions: {
-			// Use getActions to call a function within a fuction
-			selectFavs: (newfav) => {
-				const store = getStore();
-				setStore({ favorite: [...store.favorite, newfav] });
-			},
-			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
-			},
+	
 			addFavourite:(name) =>{
 				const store = getStore()
 				setStore({favorite:[...store.favorite,name]})

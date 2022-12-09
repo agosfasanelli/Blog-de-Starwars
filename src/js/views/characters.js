@@ -28,6 +28,7 @@ const Characters = () => {
                                             name={character.name}
                                             uid={character.uid}
                                             image= {`https://starwars-visualguide.com/assets/img/characters/${character.uid}.jpg`}
+                                            gender = {character.gender}
                                          />
                                     </div>
                         })
