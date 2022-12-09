@@ -32,7 +32,7 @@ const [type,setType] = useState([])
     return (
         <>
              <div className="col-lg-4 col-md-3 col-sm-6"> 
-				<div key={props.index} className="card marginrightleft bg-transparent border-1 border-light">
+				<div key={props.index} className="card marginrightleft bg-transparent border-1 border-secondary">
 					<img src={`https://starwars-visualguide.com/assets/img/planets/${props.uid}.jpg`}  className="card-img-top"/> 
 		  			<div className="card-body cardbody">
 						<h5 className="card-title textcolor text-center">{props.name}</h5>
