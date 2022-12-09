@@ -32,15 +32,15 @@ const [type,setType] = useState([])
     return (
         <>
              <div className="col-lg-4 col-md-3 col-sm-6"> 
-				<div key={props.index} className="card marginrightleft">
+				<div key={props.index} className="card marginrightleft bg-transparent border-1 border-secondary">
 					<img src={`https://starwars-visualguide.com/assets/img/planets/${props.uid}.jpg`}  className="card-img-top"/> 
 		  			<div className="card-body cardbody">
-						<h5 className="card-title">{props.name}</h5>
-                        <p class="card-text">{type.population}</p>
-                        <p class="card-text">Terrain: {type.terrain}, {type.climate}</p>
-                            <div className="position-absolute bottom-0 start-0">    
+						<h5 className="card-title textcolor text-center">{props.name}</h5>
+                        <p class="card-text textcolor text-center">{type.population}</p>
+                        <p class="card-text textcolor text-center">Terrain: {type.terrain}, {type.climate}</p>
+                            <div className="text-center">    
                             <Link to={`/planets/${props.uid}`}>
-                                <button onClick={props.uid} className="btn btn-outline-primary">Learn more!</button>
+                                <button onClick={props.uid} className="btn btn-warning">Go!</button>
                             </Link>
                                 <button onClick={()=>actions.addFavourite(props.name)} className="btn btn-outline-warning"><i class="far fa-heart"></i></button>
                             </div>     

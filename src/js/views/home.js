@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-
 import "../../styles/home.css";
 import Characters from "./characters";
 import Card from "../component/card";
@@ -28,10 +27,11 @@ export const Home = () => {
 
 
 	return (
-		<div className="text-center">
+		<div className="container">
+			
 			<Characters />
-			<div className="container">
-			<div className="marginclass"><h2>Planets</h2></div>
+			
+			<div className="marginclass"><h2 className="text-warning">Planets</h2></div>
 					<div className="divoverflow">
 						
 						{planets.map(((planet,index) => {
@@ -43,7 +43,7 @@ export const Home = () => {
 		
 					</div>
 					</div>
-		</div>
+	
 	
 	
 )};

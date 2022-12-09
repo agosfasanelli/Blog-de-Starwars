@@ -53,6 +53,10 @@
 }*/
 
 
+
+
+/*Chema Wall class ---->*/
+
 startdiv{
  
   justify-content: flex-start;
@@ -68,30 +72,28 @@ startdiv{
 
 
 .divoverflow{
-  width: 1200px;
-  height: 600px;
+  width: 1300px;
+  height: 680px;
   overflow-x: scroll;
   display:inline-flex;
   
 }
 
-.marginclasstopbottom{
+.marginclass{
   margin-top: 25px;
   margin-bottom: 25px;
 }
 .marginrightleft{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .cardbody{
   height: 200px;
+
+  
 }
 
 .textcolor{
 color:white
 }
 
-.card-img-top{
-  height: 50;
-  width: auto;
-}
