@@ -34,7 +34,7 @@ export const Home = () => {
 			<div className="marginclass"><h2 className="text-warning">Planets</h2></div>
 					<div className="divoverflow">
 						
-						{planets.map(((planet,index) => {
+						{planets.slice(1).map(((planet,index) => {
 								return( 		
 							<Card index={index} name={planet.name} uid={planet.uid} />		
 								)
