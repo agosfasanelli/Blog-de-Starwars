@@ -8,6 +8,7 @@ const Card =(props) =>{
 
 const {actions}= useContext(Context)    
 const [type,setType] = useState([])
+const [like, setLike] = useState("btn btn-outline-warning float-end")
 
     
     useEffect(() =>{
@@ -27,7 +28,11 @@ const [type,setType] = useState([])
 
         },[])
 
-  
+    const action = ()=>{
+        actions.addFavourite(props.name);
+        setLike("btn btn-outline-secondary float-end cursornotallowed") 
+
+    }
 
     return (
         <>
@@ -38,12 +43,12 @@ const [type,setType] = useState([])
 						<h5 className="card-title textcolor text-center">{props.name}</h5>
                         <p class="card-text textcolor text-center">{type.population}</p>
                         <p class="card-text textcolor text-center">Terrain: {type.terrain}, {type.climate}</p>
-                            <div className="text-center">    
+                             
                             <Link to={`/planets/${props.uid}`}>
-                                <button onClick={props.uid} className="btn btn-warning">Go!</button>
+                                <button onClick={props.uid} className="btn btn-warning">Learn More!</button>
                             </Link>
-                                <button onClick={()=>actions.addFavourite(props.name)} className="btn btn-outline-warning"><i class="far fa-heart"></i></button>
-                            </div>     
+                                <button onClick={action} className={like}><i class="far fa-heart"></i></button>
+                             
                                 
 					</div>								
 			    </div>	
