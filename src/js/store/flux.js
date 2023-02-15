@@ -1,22 +1,45 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			favorite: []
+			demo: [
+				{
+					title: "FIRST",
+					background: "white",
+					initial: "white"
+				},
+				{
+					title: "SECOND",
+					background: "white",
+					initial: "white"
+				}
+			],
+
+			favourites: []
 		},
 		actions: {
-	
+			
 			addFavourite:(name) =>{
 				const store = getStore()
-				setStore({favorite:[...store.favorite,name]})
-				
+				setStore({favourites:[...store.favourites,name]})
+				localStorage.setItem("", "no")
 			},
 
 			deleteFavourite: (index) =>{   
 				const store = getStore()
-				const nuevaLista = store.favorite.filter((item,i) => i != index)
-				setStore({favorite:nuevaLista})
+				const nuevaLista = store.favourites.filter((item,i) => i != index)
+				setStore({favourites:nuevaLista})
 				
 				                  
+			},
+			
+			// Use getActions to call a function within a fuction
+			exampleFunction: () => {
+				getActions().changeColor(0, "green");
+			},
+			loadSomeData: () => {
+				/**
+					fetch().then().then(data => setStore({ "foo": data.bar }))
+				*/
 			},
 			changeColor: (index, color) => {
 				//get the store
