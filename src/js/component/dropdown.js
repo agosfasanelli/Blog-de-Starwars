@@ -14,8 +14,8 @@ const Dropdown =() =>{
 
 return(
 <>
-            <button className="btn btn-primary dropdown-toggle" type="button" data-bs-auto-close="false" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-						Favorites <span className="badge bg-secondary">{store.favourites.length}</span> 
+            <button className="btn btn-warning dropdown-toggle" type="button" data-bs-auto-close="false" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+						Favorites <span className="badge bg-dark">{store.favourites.length}</span> 
                         </button>
 				<ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     
