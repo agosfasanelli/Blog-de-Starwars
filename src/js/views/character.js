@@ -5,15 +5,9 @@ import { Link } from "react-router-dom"
 const Character = (props) => {
 
     const { store, actions } = useContext(Context);
-    const [like, setLike] = useState("btn btn-outline-warning float-end");
-
-
-    const action = ()=>{
-        actions.addFavourite(props.name);
-        setLike("btn btn-outline-secondary float-end cursornotallowed") 
-
-    }
-
+  
+   
+    
     
     return (
         <div className="row">
@@ -31,7 +25,11 @@ const Character = (props) => {
                             className="btn btn-warning float-start">
                             Learn More!
                         </Link>
-                        <button type="button" className={like} onClick={action}><i class="far fa-heart"></i></button>
+                        {store.favourites.includes(props.name) ?
+                            <button className={"btn btn-dark float-end cursornotallowed"}><i class="far fa-heart"></i></button>    
+                            :                            
+                            <button onClick={()=>actions.addFavourite(props.name)} className={"btn btn-warning float-end"}><i class="far fa-heart"></i></button>
+                        }
                     </div>
             </div>
         </div>

@@ -14,20 +14,27 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 			],
 
-			favourites: []
+			favourites: [],
+			
+
 		},
 		actions: {
 			
 			addFavourite:(name) =>{
 				const store = getStore()
 				setStore({favourites:[...store.favourites,name]})
-				localStorage.setItem("", "no")
+
+						
+				
+				
 			},
 
 			deleteFavourite: (index) =>{   
 				const store = getStore()
 				const nuevaLista = store.favourites.filter((item,i) => i != index)
 				setStore({favourites:nuevaLista})
+				
+				
 				
 				                  
 			},
